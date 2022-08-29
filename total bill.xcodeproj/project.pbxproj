@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48DEFCF28BD1F9E0039AAEE /* PersonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48DEFCE28BD1F9E0039AAEE /* PersonsView.swift */; };
 		C4A11C4728B9191500EBFEDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A11C4628B9191500EBFEDA /* AppDelegate.swift */; };
 		C4A11C4928B9191500EBFEDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A11C4828B9191500EBFEDA /* SceneDelegate.swift */; };
 		C4A11C4B28B9191500EBFEDA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A11C4A28B9191500EBFEDA /* MainViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C48DEFCE28BD1F9E0039AAEE /* PersonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsView.swift; sourceTree = "<group>"; };
 		C4A11C4328B9191500EBFEDA /* total bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "total bill.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4A11C4628B9191500EBFEDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4A11C4828B9191500EBFEDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				C4A11C4828B9191500EBFEDA /* SceneDelegate.swift */,
 				C4A11C4A28B9191500EBFEDA /* MainViewController.swift */,
 				C4A11C5A28B93EB800EBFEDA /* TotalBillView.swift */,
+				C48DEFCE28BD1F9E0039AAEE /* PersonsView.swift */,
 				C4A11C4F28B9191700EBFEDA /* Assets.xcassets */,
 				C4A11C5128B9191700EBFEDA /* LaunchScreen.storyboard */,
 				C4A11C5428B9191700EBFEDA /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4A11C5B28B93EB800EBFEDA /* TotalBillView.swift in Sources */,
+				C48DEFCF28BD1F9E0039AAEE /* PersonsView.swift in Sources */,
 				C4A11C4B28B9191500EBFEDA /* MainViewController.swift in Sources */,
 				C4A11C4728B9191500EBFEDA /* AppDelegate.swift in Sources */,
 				C4A11C4928B9191500EBFEDA /* SceneDelegate.swift in Sources */,

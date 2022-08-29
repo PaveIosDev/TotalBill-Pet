@@ -40,6 +40,7 @@ class MainViewController: UIViewController {
     
     
     let totalBillVew = TotalBillView()
+    let  personsView = PersonsView()
     
     override func viewDidLoad() { // метод с которого начинается загрузка
         
@@ -53,11 +54,11 @@ class MainViewController: UIViewController {
     
     func setupViews(){ // настройка объектов
         view.backgroundColor = #colorLiteral(red: 0.9813231826, green: 0.9813460708, blue: 0.9813337922, alpha: 1)
-        
         view.addSubview(titleLabel)
         view.addSubview(logoImageView)
         view.addSubview(descriptionLabel)
         view.addSubview(totalBillVew)
+        view.addSubview(personsView)
     }
     
 }
@@ -82,8 +83,12 @@ extension MainViewController {
             totalBillVew.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
             totalBillVew.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             totalBillVew.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            totalBillVew.heightAnchor.constraint(equalToConstant: 150)
-        
+            totalBillVew.heightAnchor.constraint(equalToConstant: 130),
+            
+            personsView.topAnchor.constraint(equalTo: totalBillVew.bottomAnchor, constant: 10),
+            personsView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            personsView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            personsView.heightAnchor.constraint(equalToConstant: 130)
         ])
     }
 }
