@@ -43,9 +43,9 @@ class MainViewController: UIViewController {
         button.setTitle("Calculate", for: .normal)
         button.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         button.backgroundColor = #colorLiteral(red: 0.5647058824, green: 0.1529411765, blue: 0.5568627451, alpha: 1)
-        
         button.titleLabel?.font = UIFont(name: "Avenir Next", size: 20)
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(calculateButtonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -74,6 +74,13 @@ class MainViewController: UIViewController {
         view.addSubview(personsView)
         view.addSubview(calculateButton)
         view.addSubview(tipsView)
+    }
+    
+     @objc func calculateButtonTapped(){
+         guard let totalBill = totalBillVew.summTextField.text,
+            let totalBillInt = Int(totalBill) else { return }
+         let summ = totalBillInt + totalBillInt * tipsView.tipsCount / 100
+         print(summ)
     }
     
 }
